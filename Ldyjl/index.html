@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <!-- 引入CSS样式文件 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入字体图标（用于装饰） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="resume-container">
+        <!-- 左侧个人信息区域 -->
+        <div class="left-section">
+            <!-- 照片区域 -->
+            <div class="photo-container">
+                <img src="./pic/ldy.jpg" alt="个人照片" class="profile-photo">
+                <div class="photo-mask"></div>
+            </div>
+
+            <!-- 基本信息 -->
+            <div class="basic-info">
+                <h1 class="name">李东岳</h1>
+                <p class="job-title">初级前端开发工程师</p>
+                <div class="contact-info">
+                    <p><i class="fa fa-phone"></i> 13793329801</p>
+                    <p><i class="fa fa-envelope"></i> dylanlee1112@163.com</p>
+                    <p><i class="fa fa-map-marker"></i> 山东淄博</p>
+                </div>
+            </div>
+
+            <!-- 技能区域 -->
+            <div class="skills">
+                <h2><i class="fa fa-star"></i> 专业技能</h2>
+                <ul>
+                    <li class="skill-item">HTML/CSS <span class="skill-level" style="width: 90%;"></span></li>
+                    <li class="skill-item">JavaScript <span class="skill-level" style="width: 90%;"></span></li>
+                    <li class="skill-item">Vue.js <span class="skill-level" style="width: 90%;"></span></li>
+                    <li class="skill-item">Git/Webpack <span class="skill-level" style="width: 90%;"></span></li>
+                    <li class="skill-item">Element UI <span class="skill-level" style="width: 90%;"></span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 右侧简历详情区域 -->
+        <div class="right-section">
+            <!-- 关于我 -->
+            <div class="section about-me">
+                <h2 class="section-title"><i class="fa fa-user"></i> 关于我</h2>
+                <p>https://github.com/lxb71112dy</p>
+                <p>1. 已系统学习前端基础，熟练掌握HTML、CSS、JavaScript，了解HTML5、CSS3、ES6+语法特性</p>
+                <p>2. 熟悉Vue.js框架，熟悉其生态体系，包括Vue Router、Vuex等</p>
+                <p>3. 熟练掌握Webpack等构建工具，了解前端工程化</p>
+                <p>4. 熟练使用Element UI，了解组件化开发</p>
+                <p>5. 掌握Git版本控制工具，具备团队协作开发能力</p>
+            </div>
+
+            <!-- 项目经历 -->
+            <div class="section work-experience">
+                <h2 class="section-title"><i class="fa fa-briefcase"></i> 项目经历</h2>
+                <div class="experience-item">
+                    <h3>园区管理系统（PC 端）</h3>
+                    <p class="time">基于 Vue2 开发的园区管理系统，面向园区运营人员，实现园区企业信息、入驻申请、场地租赁、费用缴纳等核心功能的管理，替代传统 Excel 台账，提升园区管理效率。</p>
+                    <ul>
+                        <li>完成企业列表 / 详情、入驻申请审核、场地租赁管理、费用统计等核心页面的开发</li>
+                        <li>封装通用的搜索栏、分页器、表格、弹窗等公共组件，减少重复代码</li>
+                        <li>使用 axios 封装请求拦截器 / 响应拦截器，对接后端接口，实现数据的增删改查</li>
+                        <li>使用 Vuex 管理用户登录状态、侧边栏权限、全局筛选条件等公共数据</li>
+                        <li>使用 配置 Vue Router 实现页面跳转，添加路由守卫控制未登录用户访问权限</li>
+                        <li>实现表格数据的模糊搜索、排序、筛选，以及表单提交前的校验（使用 Element UI 表单校验）</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>电商商品列表页</h3>
+                    <p class="time">模拟电商网站商品列表页面，实现布局、筛选、排序、搜索等基础功能。</p>
+                    <ul>
+                        <li>完成商品卡片、导航栏、侧边栏、分页布局。</li>
+                        <li>使用 CSS 实现 hover 效果、加载动画、按钮状态。</li>
+                        <li>本地模拟商品数据，实现无刷新更新列表。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 教育背景 -->
+            <div class="section education">
+                <h2 class="section-title"><i class="fa fa-graduation-cap"></i> 教育背景</h2>
+                <div class="education-item">
+                    <h3>物联网工程（本科）</h3>
+                    <p class="time">2016.09 - 2020.06 | 青岛科技大学</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入JS文件 -->
+    <script src="js/script.js"></script>
+</body>
+</html>
